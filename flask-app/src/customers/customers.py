@@ -34,4 +34,4 @@ def get_customer(userID):
     the_response = make_response(jsonify(json_data))
     the_response.status_code = 200
     the_response.mimetype = 'application/json'
-    return the_response
+    return the_response   
