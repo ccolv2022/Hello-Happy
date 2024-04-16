@@ -8,7 +8,7 @@ goals = Blueprint('goals', __name__)
 # Get all goals
 @goals.route('/goals', methods=['GET'])
 def get_goals():
-
+    
     cursor = db.get_db().cursor()
     cursor.execute('SELECT * FROM goals')
     row_headers = [x[0] for x in cursor.description]
