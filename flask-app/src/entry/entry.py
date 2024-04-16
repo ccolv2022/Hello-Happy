@@ -221,7 +221,7 @@ def update_dayRating(ratingId):
 
     num = the_data['rating']
 
-    query = 'UPDATE dayRatinng SET ratingNum =' 
+    query = 'UPDATE dayRating SET ratingNum =' 
     query += num
     query += 'WHERE ratingId ='
     query += ratingId 
