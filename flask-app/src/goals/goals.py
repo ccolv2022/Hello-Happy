@@ -8,6 +8,7 @@ goals = Blueprint('goals', __name__)
 # Get all goals
 @goals.route('/goals', methods=['GET'])
 def get_goals():
+
     cursor = db.get_db().cursor()
     cursor.execute('SELECT * FROM goals')
     row_headers = [x[0] for x in cursor.description]
@@ -21,6 +22,7 @@ def get_goals():
 # Get specific goal from goalId
 @goals.route('/goals/<goalId>', methods=['GET'])
 def get_goal(goalId):
+
     cursor = db.get_db().cursor()
     cursor.execute('SELECT * FROM goals WHERE goalId = %s', (goalId,))
     row_headers = [x[0] for x in cursor.description]
@@ -34,6 +36,7 @@ def get_goal(goalId):
 # Get goals made by a specific user
 @goals.route('/goals/user/<userId>', methods=['GET'])
 def get_user_goals(userId):
+
     cursor = db.get_db().cursor()
     cursor.execute('SELECT * FROM goals WHERE userId = %s', (userId,))
     row_headers = [x[0] for x in cursor.description]
@@ -47,6 +50,7 @@ def get_user_goals(userId):
 # Update specific goal
 @goals.route('/goals/<goalId>', methods=['PUT'])
 def update_goal(goalId):
+
     goal_info = request.json
     current_app.logger.info(goal_info)
 
@@ -71,6 +75,7 @@ def update_goal(goalId):
 # Delete specific goal
 @goals.route('/goals/<goalId>', methods=['DELETE'])
 def delete_goal(goalId):
+
     cursor = db.get_db().cursor()
     cursor.execute('DELETE FROM goals WHERE goalId = %s', (goalId,))
     db.get_db().commit()
@@ -81,6 +86,7 @@ def delete_goal(goalId):
 # Create a new goal for a specific user
 @goals.route('/goals/user/<userId>', methods=['POST'])
 def add_goal(userId):
+    
     goal_info = request.json
     current_app.logger.info(goal_info)
 
