@@ -177,7 +177,7 @@ def get_dayRating():
 
 #Retrieve day rating details from a specific ID. 
 @entry.route('/entry/dayRating<ratingId>', methods=['GET'])
-def get_dayRating(ratingId):
+def get_adayRating(ratingId):
 
     query = 'SELECT * FROM dayRating WHERE ratingId =' + str(ratingId)
     current_app.logger.info(query)
