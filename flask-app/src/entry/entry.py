@@ -159,7 +159,7 @@ def delete_entry(entryId):
 #------------------DAY RATING-----------------------
 
 #Retrieve all possible day ratings. 
-@entry.route('/entry/dayRating<>', methods=['GET'])
+@entry.route('/entry/dayRating/<int:dayRating>', methods=['GET'])
 def get_dayRating():
 
     query = 'SELECT * FROM dayRating'
