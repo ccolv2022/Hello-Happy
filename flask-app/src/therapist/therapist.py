@@ -2,10 +2,10 @@ from flask import Blueprint, request, jsonify, make_response
 import json
 from src import db
 
-therapist_blueprint = Blueprint('therapist', __name__)
+therapist = Blueprint('therapist', __name__)
 
 # Get all therapists from the DB
-@therapist_blueprint.route('/therapist', methods=['GET'])
+@therapist.route('/therapist', methods=['GET'])
 def get_therapists():
     cursor = db.get_db().cursor()
     cursor.execute('SELECT * FROM therapist')
@@ -17,7 +17,7 @@ def get_therapists():
     return make_response(jsonify(json_data), 200)
 
 # Get detailed info for a specific therapist
-@therapist_blueprint.route('/therapist/<int:therapistId>', methods=['GET'])
+@therapist.route('/therapist/<int:therapistId>', methods=['GET'])
 def get_therapist(therapistId):
     cursor = db.get_db().cursor()
     cursor.execute('SELECT * FROM therapist WHERE therapistId = %s', (therapistId,))
@@ -29,7 +29,7 @@ def get_therapist(therapistId):
     return make_response(jsonify(json_data), 200)
 
 # Register new therapist
-@therapist_blueprint.route('/therapist', methods=['POST'])
+@therapist.route('/therapist', methods=['POST'])
 def create_therapist():
     data = request.json
     cursor = db.get_db().cursor()
@@ -39,7 +39,7 @@ def create_therapist():
     return make_response(jsonify({"message": "Therapist created successfully"}), 201)
 
 # Update information for a specific therapist
-@therapist_blueprint.route('/therapist/<int:therapistId>', methods=['PUT'])
+@therapist.route('/therapist/<int:therapistId>', methods=['PUT'])
 def update_therapist(therapistId):
     data = request.json
     cursor = db.get_db().cursor()
@@ -49,7 +49,7 @@ def update_therapist(therapistId):
     return make_response(jsonify({"message": "Therapist updated successfully"}), 200)
 
 # Remove a specific therapist
-@therapist_blueprint.route('/therapist/<int:therapistId>', methods=['DELETE'])
+@therapist.route('/therapist/<int:therapistId>', methods=['DELETE'])
 def delete_therapist(therapistId):
     cursor = db.get_db().cursor()
     cursor.execute('DELETE FROM therapist WHERE therapistId = %s', (therapistId,))
@@ -57,7 +57,7 @@ def delete_therapist(therapistId):
     return make_response(jsonify({"message": "Therapist deleted successfully"}), 200)
 
 # Get a therapist's upcoming schedule
-@therapist_blueprint.route('/therapist/<int:therapistId>/schedule', methods=['GET'])
+@therapist.route('/therapist/<int:therapistId>/schedule', methods=['GET'])
 def get_therapist_schedule(therapistId):
     cursor = db.get_db().cursor()
     cursor.execute(
