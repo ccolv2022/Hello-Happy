@@ -2,11 +2,11 @@ from flask import Blueprint, request, jsonify, make_response
 import json
 from src import db
 
-users_blueprint = Blueprint('users', __name__)
+user_blueprint = Blueprint('user', __name__)
 
 # Get all users from the DB
-@users_blueprint.route('/user', methods=['GET'])
-def get_users():
+@user_blueprint.route('/user', methods=['GET'])
+def get_user():
     cursor = db.get_db().cursor()
     cursor.execute('SELECT * FROM user')
     row_headers = [x[0] for x in cursor.description]
@@ -17,7 +17,7 @@ def get_users():
     return make_response(jsonify(json_data), 200)
 
 # Get detailed info for specific user
-@users_blueprint.route('/user/<int:userId>', methods=['GET'])
+@user_blueprint.route('/user/<int:userId>', methods=['GET'])
 def get_user(userId):
     cursor = db.get_db().cursor()
     cursor.execute('SELECT * FROM user WHERE userId = %s', (userId,))
@@ -29,7 +29,7 @@ def get_user(userId):
     return make_response(jsonify(json_data), 200)
 
 # Register new user
-@users_blueprint.route('/user', methods=['POST'])
+@user_blueprint.route('/user', methods=['POST'])
 def create_user():
     data = request.json
     cursor = db.get_db().cursor()
@@ -39,7 +39,7 @@ def create_user():
     return make_response(jsonify({"message": "User created successfully"}), 201)
 
 # Update user details
-@users_blueprint.route('/user/<int:userId>', methods=['PUT'])
+@user_blueprint.route('/user/<int:userId>', methods=['PUT'])
 def update_user(userId):
     data = request.json
     cursor = db.get_db().cursor()
@@ -49,7 +49,7 @@ def update_user(userId):
     return make_response(jsonify({"message": "User updated successfully"}), 200)
 
 # Delete a specific user
-@users_blueprint.route('/user/<int:userId>', methods=['DELETE'])
+@user_blueprint.route('/user/<int:userId>', methods=['DELETE'])
 def delete_user(userId):
     cursor = db.get_db().cursor()
     cursor.execute('DELETE FROM user WHERE userId = %s', (userId,))
@@ -57,7 +57,7 @@ def delete_user(userId):
     return make_response(jsonify({"message": "User deleted successfully"}), 200)
 
 # Retrieve user settings for a specific user
-@users_blueprint.route('/user_settings/<int:userId>', methods=['GET'])
+@user_blueprint.route('/user_settings/<int:userId>', methods=['GET'])
 def get_user_settings(userId):
     cursor = db.get_db().cursor()
     cursor.execute('SELECT * FROM user_settings WHERE userId = %s', (userId,))
@@ -71,7 +71,7 @@ def get_user_settings(userId):
     return make_response(jsonify(json_data), 200 if theData else 404)
 
 # Update user settings for a specific user
-@users_blueprint.route('/user_settings/<int:userId>', methods=['PUT'])
+@user_blueprint.route('/user_settings/<int:userId>', methods=['PUT'])
 def update_user_settings(userId):
     data = request.json
     cursor = db.get_db().cursor()
@@ -97,8 +97,8 @@ def update_user_settings(userId):
     return make_response(jsonify({'message': 'User settings updated successfully.'}), 200)
 
 # Retrieve users managed by a specific therapist
-@users_blueprint.route('/user/<int:therapistId>', methods=['GET'])
-def get_users_by_therapist(therapistId):
+@user_blueprint.route('/user/<int:therapistId>', methods=['GET'])
+def get_user_by_therapist(therapistId):
     cursor = db.get_db().cursor()
     cursor.execute('SELECT * FROM user WHERE therapistId = %s', (therapistId,))
     row_headers = [x[0] for x in cursor.description]
@@ -109,19 +109,19 @@ def get_users_by_therapist(therapistId):
     return make_response(jsonify(json_data), 200)
 
 # Remove all users from a therapist's management
-@users_blueprint.route('/user/<int:therapistId>', methods=['DELETE'])
-def remove_users_by_therapist(therapistId):
+@user_blueprint.route('/user/<int:therapistId>', methods=['DELETE'])
+def remove_user_by_therapist(therapistId):
     cursor = db.get_db().cursor()
     cursor.execute('DELETE FROM user WHERE therapistId = %s', (therapistId,))
     db.get_db().commit()
     affected_rows = cursor.rowcount
     if affected_rows > 0:
-        return make_response(jsonify({'message': f'{affected_rows} users removed from therapist {therapistId}.'}), 200)
+        return make_response(jsonify({'message': f'{affected_rows} user removed from therapist {therapistId}.'}), 200)
     else:
-        return make_response(jsonify({'message': 'No users found for the specified therapist or no action taken.'}), 404)
+        return make_response(jsonify({'message': 'No user found for the specified therapist or no action taken.'}), 404)
 
 # Retrieve all friend connections involving a specific user
-@users_blueprint.route('/friendlist/<int:userId>', methods=['GET'])
+@user_blueprint.route('/friendlist/<int:userId>', methods=['GET'])
 def get_friendlist(userId):
     cursor = db.get_db().cursor()
     cursor.execute(
@@ -135,7 +135,7 @@ def get_friendlist(userId):
     return make_response(jsonify(json_data), 200)
 
 # Remove all friend connections under a specific user
-@users_blueprint.route('/friendlist/<int:userId>', methods=['DELETE'])
+@user_blueprint.route('/friendlist/<int:userId>', methods=['DELETE'])
 def delete_all_friends(userId):
     cursor = db.get_db().cursor()
     cursor.execute(
@@ -145,7 +145,7 @@ def delete_all_friends(userId):
     return make_response(jsonify({'message': 'All friend connections removed for user {0}.'.format(userId)}), 200)
 
 # Retrieve specific user-friend connection
-@users_blueprint.route('/friendlist/<int:userId>/<int:friendId>', methods=['GET'])
+@user_blueprint.route('/friendlist/<int:userId>/<int:friendId>', methods=['GET'])
 def get_specific_friend_connection(userId, friendId):
     cursor = db.get_db().cursor()
     cursor.execute(
@@ -162,7 +162,7 @@ def get_specific_friend_connection(userId, friendId):
         return make_response(jsonify({'message': 'No friend connection found.'}), 404)
 
 # Remove specific friend connection
-@users_blueprint.route('/friendlist/<int:userId>/<int:friendId>', methods=['DELETE'])
+@user_blueprint.route('/friendlist/<int:userId>/<int:friendId>', methods=['DELETE'])
 def delete_specific_friend(userId, friendId):
     cursor = db.get_db().cursor()
     cursor.execute(
