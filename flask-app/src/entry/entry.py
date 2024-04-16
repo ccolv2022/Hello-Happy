@@ -159,7 +159,7 @@ def delete_entry(entryId):
 #------------------DAY RATING-----------------------
 
 #Retrieve all possible day ratings. 
-@entry.route('/entry/day-ratings<>', methods=['GET'])
+@entry.route('/entry/dayRatings<>', methods=['GET'])
 def get_dayRatings():
 
     query = 'SELECT * FROM dayRating'
@@ -176,7 +176,7 @@ def get_dayRatings():
 
 
 #Retrieve day rating details from a specific ID. 
-@entry.route('/entry/day-ratings<ratingId>', methods=['GET'])
+@entry.route('/entry/dayRatings<ratingId>', methods=['GET'])
 def get_dayRatings(ratingId):
 
     query = 'SELECT * FROM dayRating WHERE ratingId =' + str(ratingId)
@@ -194,7 +194,7 @@ def get_dayRatings(ratingId):
    
 
 #Add a new day rating.
-@entry.route('/entry/day-ratings<>', methods=['POST'])
+@entry.route('/entry/dayRatings<>', methods=['POST'])
 def add_dayRating():
     
     the_data = request.json
@@ -213,7 +213,7 @@ def add_dayRating():
     return 'Success!'
 
 #Update specific day rating number from a ratingId
-@entry.route('/entry/day-ratings<ratingId>', methods=['PUT'])
+@entry.route('/entry/dayRatings<ratingId>', methods=['PUT'])
 def update_dayRating(ratingId):
 
     the_data = request.json
@@ -235,7 +235,7 @@ def update_dayRating(ratingId):
     return 'Success!'
 
 #Delete specific day rating 
-@entry.route('/entry/day-ratings<ratingId>', methods=['DELETE'])
+@entry.route('/entry/dayRatings<ratingId>', methods=['DELETE'])
 def delete_dayRating(ratingId):
     
     the_data = request.json
@@ -291,7 +291,7 @@ def add_weatherLookup():
     return 'Success!'
 
 #Retrieve weatherLookup details from a specific ID. 
-@entry.route('/entry/day-ratings<weatherId>', methods=['GET'])
+@entry.route('/entry/dayRatings<weatherId>', methods=['GET'])
 def get_dayRatings(weatherId):
 
     query = 'SELECT * FROM weatherLookup WHERE weatherId =' + str(weatherId)
@@ -393,7 +393,7 @@ def add_activities():
     return 'Success!'
 
 #Retrieve activity details from a specific ID. 
-@entry.route('/entry/day-ratings<id>', methods=['GET'])
+@entry.route('/entry/dayRatings<id>', methods=['GET'])
 def get_activity(id):
 
     query = 'SELECT * FROM activites WHERE activityId =' + str(id)
