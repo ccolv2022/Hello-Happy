@@ -194,7 +194,7 @@ def get_adayRating(ratingId):
    
 
 #Add a new day rating.
-@entry.route('/entry/dayRating<>', methods=['POST'])
+@entry.route('/entry/dayRating', methods=['POST'])
 def add_dayRating():
     
     the_data = request.json
@@ -255,7 +255,7 @@ def delete_dayRating(ratingId):
 #------------------WEATHER LOOKUP-----------------------
 
 #Retrieve all possible weather data. 
-@entry.route('/entry/weather<>', methods=['GET'])
+@entry.route('/entry/weather', methods=['GET'])
 def get_weatherLookup():
 
     query = 'SELECT * FROM weatherLookup'
@@ -272,7 +272,7 @@ def get_weatherLookup():
 
 
 #Add a new weather option 
-@entry.route('/entry/weather<>', methods=['POST'])
+@entry.route('/entry/weather', methods=['POST'])
 def add_weatherLookup():
     
     the_data = request.json
@@ -356,7 +356,7 @@ def delete_weatherLookup(ID):
 #-----------------------ACTIVITIES----------------------------
 
 # Retrieve details of all activities 
-@entry.route('/entry/activity<>', methods=['GET'])
+@entry.route('/entry/activity', methods=['GET'])
 def get_activities():
 
     query = 'SELECT * FROM activities'
@@ -372,7 +372,7 @@ def get_activities():
     return jsonify(json_data)
 
 # Create a new activity
-@entry.route('/entry/activity<>', methods=['POST'])
+@entry.route('/entry/activity', methods=['POST'])
 def add_activities():
     
     the_data = request.json
