@@ -292,7 +292,7 @@ def add_weatherLookup():
 
 #Retrieve weatherLookup details from a specific ID. 
 @entry.route('/entry/dayRating<weatherId>', methods=['GET'])
-def get_dayRating(weatherId):
+def get_dayRatings(weatherId):
 
     query = 'SELECT * FROM weatherLookup WHERE weatherId =' + str(weatherId)
     current_app.logger.info(query)
@@ -310,7 +310,7 @@ def get_dayRating(weatherId):
 
 #Update specific weather type from a weatherId
 @entry.route('/entry/weatherLookup<id>', methods=['PUT'])
-def update_dayRating(id):
+def update_dayRatings(id):
 
     the_data = request.json
     current_app.logger.info(the_data)
