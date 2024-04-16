@@ -159,8 +159,8 @@ def delete_entry(entryId):
 #------------------DAY RATING-----------------------
 
 #Retrieve all possible day ratings. 
-@entry.route('/entry/dayRatings<>', methods=['GET'])
-def get_dayRatings():
+@entry.route('/entry/dayRating<>', methods=['GET'])
+def get_dayRating():
 
     query = 'SELECT * FROM dayRating'
     current_app.logger.info(query)
@@ -176,8 +176,8 @@ def get_dayRatings():
 
 
 #Retrieve day rating details from a specific ID. 
-@entry.route('/entry/dayRatings<ratingId>', methods=['GET'])
-def get_dayRatings(ratingId):
+@entry.route('/entry/dayRating<ratingId>', methods=['GET'])
+def get_dayRating(ratingId):
 
     query = 'SELECT * FROM dayRating WHERE ratingId =' + str(ratingId)
     current_app.logger.info(query)
@@ -194,7 +194,7 @@ def get_dayRatings(ratingId):
    
 
 #Add a new day rating.
-@entry.route('/entry/dayRatings<>', methods=['POST'])
+@entry.route('/entry/dayRating<>', methods=['POST'])
 def add_dayRating():
     
     the_data = request.json
@@ -213,7 +213,7 @@ def add_dayRating():
     return 'Success!'
 
 #Update specific day rating number from a ratingId
-@entry.route('/entry/dayRatings<ratingId>', methods=['PUT'])
+@entry.route('/entry/dayRating<ratingId>', methods=['PUT'])
 def update_dayRating(ratingId):
 
     the_data = request.json
@@ -235,7 +235,7 @@ def update_dayRating(ratingId):
     return 'Success!'
 
 #Delete specific day rating 
-@entry.route('/entry/dayRatings<ratingId>', methods=['DELETE'])
+@entry.route('/entry/dayRating<ratingId>', methods=['DELETE'])
 def delete_dayRating(ratingId):
     
     the_data = request.json
@@ -291,8 +291,8 @@ def add_weatherLookup():
     return 'Success!'
 
 #Retrieve weatherLookup details from a specific ID. 
-@entry.route('/entry/dayRatings<weatherId>', methods=['GET'])
-def get_dayRatings(weatherId):
+@entry.route('/entry/dayRating<weatherId>', methods=['GET'])
+def get_dayRating(weatherId):
 
     query = 'SELECT * FROM weatherLookup WHERE weatherId =' + str(weatherId)
     current_app.logger.info(query)
@@ -393,7 +393,7 @@ def add_activities():
     return 'Success!'
 
 #Retrieve activity details from a specific ID. 
-@entry.route('/entry/dayRatings<id>', methods=['GET'])
+@entry.route('/entry/dayRating<id>', methods=['GET'])
 def get_activity(id):
 
     query = 'SELECT * FROM activites WHERE activityId =' + str(id)
