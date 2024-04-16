@@ -18,7 +18,7 @@ def get_user():
 
 # Get detailed info for specific user
 @user.route('/user/<int:userId>', methods=['GET'])
-def get_user(userId):
+def get_users(userId):
     cursor = db.get_db().cursor()
     cursor.execute('SELECT * FROM user WHERE userId = %s', (userId,))
     row_headers = [x[0] for x in cursor.description]
