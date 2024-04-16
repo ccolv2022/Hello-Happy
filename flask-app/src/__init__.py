@@ -19,7 +19,7 @@ def create_app():
     app.config['MYSQL_DATABASE_PASSWORD'] = open('/secrets/db_root_password.txt').readline().strip()
     app.config['MYSQL_DATABASE_HOST'] = 'db'
     app.config['MYSQL_DATABASE_PORT'] = 3306
-    app.config['MYSQL_DATABASE_DB'] = 'northwind'  # Change this to your DB name
+    app.config['MYSQL_DATABASE_DB'] = 'hellohappy'  # Change this to your DB name
 
     # Initialize the database object with the settings above. 
     db.init_app(app)
@@ -33,13 +33,25 @@ def create_app():
         return "<h1>Welcome to the 3200 boilerplate app</h1>"
 
     # Import the various Beluprint Objects
-    from src.customers.customers import customers
-    from src.products.products  import products
+    from src.entry.entry import entry
+    from src.goals.goals  import goals
+    from src.meeting.meeting  import meeting
+    from src.subpay.subpay  import subpay
+    from src.suggestions.suggestions  import suggestions
+    from src.therapist.therapist  import therapist
+    from src.user.user  import user
+
 
     # Register the routes from each Blueprint with the app object
     # and give a url prefix to each
-    app.register_blueprint(customers,   url_prefix='/c')
-    app.register_blueprint(products,    url_prefix='/p')
+    app.register_blueprint(entry,   url_prefix='/e')
+    app.register_blueprint(goals,    url_prefix='/g')
+    app.register_blueprint(meeting,    url_prefix='/m')
+    app.register_blueprint(subpay,    url_prefix='/p')
+    app.register_blueprint(suggestions,    url_prefix='/s')
+    app.register_blueprint(therapist,    url_prefix='/t')
+    app.register_blueprint(user,    url_prefix='/u')
+
 
     # Don't forget to return the app object
     return app
