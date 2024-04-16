@@ -160,7 +160,7 @@ CREATE TABLE IF NOT EXISTS payment (
 );
 
 
-
+/* 
 
 
 
@@ -313,4 +313,4 @@ UPDATE entry SET moodRating = 8, hoursSleep = 7 WHERE entryId = 402 AND userId =
 
 
 -- Delete (Physical Health Accountability):
-DELETE FROM entry WHERE entryId = 403 AND userId = 5;
+DELETE FROM entry WHERE entryId = 403 AND userId = 5; */
