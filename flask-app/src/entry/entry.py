@@ -10,7 +10,7 @@ entry = Blueprint('entry', __name__)
 def get_entries():
     cursor = db.get_db().cursor()
 
-    cursor.execute('SELECT * FROM products')
+    cursor.execute('SELECT * FROM entry')
 
     column_headers = [x[0] for x in cursor.description]
 
