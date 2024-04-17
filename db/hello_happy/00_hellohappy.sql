@@ -113,7 +113,7 @@ CREATE TABLE IF NOT EXISTS entry (
    wakeUpTime DATETIME,
    sleepTime DATETIME,
    weather int,
-   primaryLocation varchar(30),
+   primaryLocation varchar(255),
    visibility boolean DEFAULT true,
    userId int,
    CONSTRAINT fk8
