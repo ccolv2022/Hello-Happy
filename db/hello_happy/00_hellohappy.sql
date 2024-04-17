@@ -1,6 +1,5 @@
-DROP SCHEMA IF EXISTS `hello_happy` ;
-CREATE SCHEMA IF NOT EXISTS `hello_happy`;
-USE `hello_happy` ;
+CREATE DATABASE IF NOT EXISTS hello_happy;
+USE hello_happy;
 
 
 CREATE TABLE IF NOT EXISTS therapist (
@@ -98,7 +97,7 @@ CREATE TABLE IF NOT EXISTS weatherLookup (
 );
 
 
-CREATE TABLE IF NOT EXISTS  entry (
+CREATE TABLE IF NOT EXISTS entry (
    entryId int PRIMARY KEY,
    timestamp DATETIME DEFAULT current_timestamp ON UPDATE current_timestamp,
    dayRating int NOT NULL,

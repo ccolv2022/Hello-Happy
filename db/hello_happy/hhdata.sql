@@ -1010,8 +1010,10 @@ insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId
 insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10165, null, 'ante ipsum primis in faucibus orci luctus et ultrices posuere', false, 265, 165);
 
 
+
+
 insert into suggestions (sugId, description, therapistId, userId) values (10001, 'eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare', 101, 1);
-insert into suggestions (sugId, description, therapistId, userId) values (10002, null, null, 2);
+insert into suggestions (sugId, description, therapistId, userId) values (10002, null, null, 102, 2);
 insert into suggestions (sugId, description, therapistId, userId) values (10003, 'bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce', 103, 3);
 insert into suggestions (sugId, description, therapistId, userId) values (10004, null, 104, 4);
 insert into suggestions (sugId, description, therapistId, userId) values (10005, 'pede venenatis non sodales sed tincidunt eu felis fusce posuere felis', 105, 5);
@@ -1175,6 +1177,41 @@ insert into suggestions (sugId, description, therapistId, userId) values (10162,
 insert into suggestions (sugId, description, therapistId, userId) values (10163, null, 263, 163);
 insert into suggestions (sugId, description, therapistId, userId) values (10164, 'faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor', 264, 164);
 insert into suggestions (sugId, description, therapistId, userId) values (10165, null, 265, 165);
+insert into suggestions (sugId, description, therapistId, userId) values (10166, 'fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed', 266, 166);
+insert into suggestions (sugId, description, therapistId, userId) values (10167, 'nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante', 267, 167);
+insert into suggestions (sugId, description, therapistId, userId) values (10168, null, 268, 168);
+insert into suggestions (sugId, description, therapistId, userId) values (10169, 'congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus', null, 169);
+insert into suggestions (sugId, description, therapistId, userId) values (10170, 'ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere', 270, 170);
+insert into suggestions (sugId, description, therapistId, userId) values (10171, null, 271, 171);
+insert into suggestions (sugId, description, therapistId, userId) values (10172, 'pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum', 272, 172);
+insert into suggestions (sugId, description, therapistId, userId) values (10173, 'curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin', 273, 173);
+insert into suggestions (sugId, description, therapistId, userId) values (10174, 'morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl', null, 174);
+insert into suggestions (sugId, description, therapistId, userId) values (10175, 'duis ac nibh fusce lacus purus aliquet at feugiat non', 275, 175);
+insert into suggestions (sugId, description, therapistId, userId) values (10176, 'congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien', 276, 176);
+insert into suggestions (sugId, description, therapistId, userId) values (10177, null, null, 177);
+insert into suggestions (sugId, description, therapistId, userId) values (10178, 'ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at', 278, 178);
+insert into suggestions (sugId, description, therapistId, userId) values (10179, 'ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae', 279, 179);
+insert into suggestions (sugId, description, therapistId, userId) values (10180, 'nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut', 280, 180);
+insert into suggestions (sugId, description, therapistId, userId) values (10181, 'quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero', 281, 181);
+insert into suggestions (sugId, description, therapistId, userId) values (10182, 'dolor sit amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum', 282, 182);
+insert into suggestions (sugId, description, therapistId, userId) values (10183, 'a odio in hac habitasse platea dictumst maecenas ut massa quis augue', 283, 183);
+insert into suggestions (sugId, description, therapistId, userId) values (10184, 'duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel', 284, 184);
+insert into suggestions (sugId, description, therapistId, userId) values (10185, 'in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in', null, 185);
+insert into suggestions (sugId, description, therapistId, userId) values (10186, 'lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros', null, 186);
+insert into suggestions (sugId, description, therapistId, userId) values (10187, 'eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie', 287, 187);
+insert into suggestions (sugId, description, therapistId, userId) values (10188, 'nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin', 288, 188);
+insert into suggestions (sugId, description, therapistId, userId) values (10189, 'orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus', 289, 189);
+insert into suggestions (sugId, description, therapistId, userId) values (10190, 'luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis', 290, 190);
+insert into suggestions (sugId, description, therapistId, userId) values (10191, 'turpis enim blandit mi in porttitor pede justo eu massa donec dapibus', null, 191);
+insert into suggestions (sugId, description, therapistId, userId) values (10192, 'est congue elementum in hac habitasse platea dictumst morbi vestibulum velit', 292, 192);
+insert into suggestions (sugId, description, therapistId, userId) values (10193, 'posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin', 293, 193);
+insert into suggestions (sugId, description, therapistId, userId) values (10194, null, 294, 194);
+insert into suggestions (sugId, description, therapistId, userId) values (10195, 'est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et', 295, 195);
+insert into suggestions (sugId, description, therapistId, userId) values (10196, 'convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero', 296, 196);
+insert into suggestions (sugId, description, therapistId, userId) values (10197, null, 297, 197);
+insert into suggestions (sugId, description, therapistId, userId) values (10198, 'id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque', 298, 198);
+insert into suggestions (sugId, description, therapistId, userId) values (10199, 'elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur', 299, 199);
+insert into suggestions (sugId, description, therapistId, userId) values (10200, 'elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel', 300, 200);
 
 
 insert into entry (entryId, dayRating, goodDay, moodRating, peopleSeen, meals, ozWater, hoursExercise, exerciseIntensity, hoursSleep, people, wakeUpTime, sleepTime, weather, primaryLocation, visibility, userId) values (1, 19, false, 'Bigender', 6, 32, 'posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis', 20.8, 6, 7, 12, 'euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc', '2022-04-10 00:29:24', '2022-10-25 22:05:05', 9, 'ultrices aliquet maecenas', true, 1);
