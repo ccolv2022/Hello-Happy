@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS hello_happy;
+CREATE SCHEMA IF NOT EXISTS hello_happy;
 USE hello_happy;
 
 
