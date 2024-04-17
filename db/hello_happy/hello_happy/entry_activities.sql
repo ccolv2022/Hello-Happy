@@ -1,4 +1,4 @@
-create table hello_happy.entry_activities
+/*create table hello_happy.entry_activities
 (
     entryId    int not null,
     activityId int not null,

@@ -1,4 +1,4 @@
-create table hello_happy.activities
+/*create table hello_happy.activities
 (
     activityId    int auto_increment
         primary key,

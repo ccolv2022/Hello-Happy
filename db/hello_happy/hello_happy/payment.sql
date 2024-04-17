@@ -1,4 +1,4 @@
-create table hello_happy.payment
+/*create table hello_happy.payment
 (
     paymentId   int            not null
         primary key,

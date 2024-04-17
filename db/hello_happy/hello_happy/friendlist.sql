@@ -1,4 +1,4 @@
-create table hello_happy.friendlist
+/*create table hello_happy.friendlist
 (
     userId   int not null,
     friendId int not null,

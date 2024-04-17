@@ -1,4 +1,4 @@
-create table hello_happy.subscription
+/*create table hello_happy.subscription
 (
     subscriptionId   int            not null
         primary key,

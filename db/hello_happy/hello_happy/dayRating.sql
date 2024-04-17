@@ -1,4 +1,4 @@
-create table hello_happy.dayRating
+/*create table hello_happy.dayRating
 (
     ratingId  int auto_increment
         primary key,

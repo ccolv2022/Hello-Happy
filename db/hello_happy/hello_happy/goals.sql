@@ -1,4 +1,4 @@
-create table hello_happy.goals
+/*create table hello_happy.goals
 (
     goalId           int                  not null
         primary key,
