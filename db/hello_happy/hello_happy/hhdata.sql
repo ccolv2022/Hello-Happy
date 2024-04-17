@@ -1008,41 +1008,7 @@ insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId
 insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10163, '2023-12-07', 'amet cursus id turpis integer aliquet massa id lobortis', false, 263, 163);
 insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10164, '2024-02-27', 'maecenas tristique est et tempus semper est', true, 264, 164);
 insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10165, null, 'ante ipsum primis in faucibus orci luctus et ultrices posuere', false, 265, 165);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10166, null, 'a pede', true, 266, 166);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10167, null, 'at lorem integer tincidunt', null, 267, 167);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10168, '2023-04-14', 'et ultrices posuere cubilia curae duis faucibus accumsan', true, 268, 168);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10169, '2023-11-15', 'vel lectus in quam fringilla rhoncus', null, 269, 169);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10170, '2023-07-31', 'bibendum felis sed', true, 270, 170);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10171, null, 'tellus nisi eu orci mauris lacinia', null, 271, 171);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10172, '2023-09-12', 'in', false, 272, 172);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10173, '2023-09-29', 'consequat in consequat ut nulla sed accumsan felis', true, 273, 173);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10174, '2023-10-28', 'imperdiet nullam orci pede venenatis non', true, 274, 174);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10175, '2024-03-27', 'nullam orci pede venenatis non sodales sed', false, 275, 175);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10176, '2023-11-12', 'quam', true, 276, 176);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10177, null, 'volutpat', null, 277, 177);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10178, '2023-05-24', '', false, 278, 178);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10179, '2024-04-06', 'ut volutpat sapien arcu sed augue', false, 279, 179);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10180, '2023-08-15', 'curabitur convallis duis consequat dui nec nisi volutpat eleifend', true, 280, 180);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10181, '2024-01-13', 'vivamus tortor duis mattis egestas metus aenean fermentum', false, 281, 181);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10182, null, '', null, 282, 182);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10183, '2023-12-20', 'tincidunt lacus', true, 283, 183);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10184, '2024-01-05', 'magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum', false, 284, 184);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10185, '2023-12-20', 'mauris laoreet ut rhoncus aliquet pulvinar', null, 285, 185);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10186, '2024-01-09', 'vel nisl duis ac nibh fusce', true, 286, 186);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10187, '2023-10-22', 'neque sapien', true, 287, 187);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10188, '2023-11-15', 'maecenas tincidunt lacus at velit', true, 288, 188);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10189, '2024-03-16', 'in sagittis dui', true, 289, 189);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10190, '2024-03-04', 'feugiat et eros vestibulum ac est lacinia nisi', null, 290, 190);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10191, null, 'rutrum rutrum neque aenean auctor', true, 291, 191);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10192, '2023-09-09', 'cursus id turpis integer aliquet massa id', false, 292, 192);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10193, '2024-04-07', 'integer', false, 293, 193);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10194, '2024-01-05', 'urna ut tellus nulla ut erat id', true, 294, 194);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10195, '2023-07-15', 'feugiat non pretium', false, 295, 195);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10196, '2024-03-14', 'metus aenean fermentum donec', true, 296, 196);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10197, '2023-10-16', 'donec vitae nisi', false, 297, 197);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10198, null, 'fermentum donec', false, 298, 198);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10199, '2024-03-28', '', true, 299, 199);
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10200, null, 'augue luctus tincidunt nulla mollis molestie', false, 300, 200);
+
 
 
 
