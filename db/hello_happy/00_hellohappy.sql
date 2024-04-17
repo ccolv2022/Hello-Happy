@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS goals (
 CREATE TABLE IF NOT EXISTS meeting (
    meetingId int PRIMARY KEY,
    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
-   topic varchar(30),
+   topic varchar(200),
    isVirtual boolean DEFAULT false,
    therapistId int,
    userId int,
