@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS hello_happy;
-USE hello_happy;
+CREATE DATABASE IF NOT EXISTS 'hello_happy';
+USE 'hello_happy';
 
 
 CREATE TABLE IF NOT EXISTS therapist (
