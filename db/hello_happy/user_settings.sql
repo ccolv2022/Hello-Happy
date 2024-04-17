@@ -1,4 +1,4 @@
-insert into user_settings (userId, notifications_on, contacts_on) values (1, false, false);
+/* insert into user_settings (userId, notifications_on, contacts_on) values (1, false, false);
 insert into user_settings (userId, notifications_on, contacts_on) values (2, true, null);
 insert into user_settings (userId, notifications_on, contacts_on) values (3, true, null);
 insert into user_settings (userId, notifications_on, contacts_on) values (4, false, false);
@@ -198,3 +198,4 @@ insert into user_settings (userId, notifications_on, contacts_on) values (197, n
 insert into user_settings (userId, notifications_on, contacts_on) values (198, false, null);
 insert into user_settings (userId, notifications_on, contacts_on) values (199, null, false);
 insert into user_settings (userId, notifications_on, contacts_on) values (200, null, false);
+ */

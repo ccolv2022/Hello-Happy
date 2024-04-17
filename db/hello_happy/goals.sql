@@ -1,4 +1,4 @@
-insert into goals (userId, goalId, completionStatus, description) values (1, 1001, true, 'vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum');
+/* insert into goals (userId, goalId, completionStatus, description) values (1, 1001, true, 'vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum');
 insert into goals (userId, goalId, completionStatus, description) values (2, 1002, false, 'risus praesent lectus');
 insert into goals (userId, goalId, completionStatus, description) values (3, 1003, null, 'vitae consectetuer eget rutrum at');
 insert into goals (userId, goalId, completionStatus, description) values (4, 1004, false, 'ut tellus nulla ut erat id');
@@ -198,3 +198,4 @@ insert into goals (userId, goalId, completionStatus, description) values (197, 1
 insert into goals (userId, goalId, completionStatus, description) values (198, 1198, false, 'quis turpis eget elit sodales scelerisque mauris');
 insert into goals (userId, goalId, completionStatus, description) values (199, 1199, false, 'magna ac consequat metus sapien ut nunc vestibulum ante ipsum');
 insert into goals (userId, goalId, completionStatus, description) values (200, 1200, false, '');
+ */
