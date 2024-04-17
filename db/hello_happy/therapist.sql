@@ -1,4 +1,4 @@
-insert into therapist (therapistId, firstName, lastName, email, phone) values (101, 'Marlee', 'Stackbridge', 'mstackbridge0@rambler.ru', '433-341-6761');
+/* insert into therapist (therapistId, firstName, lastName, email, phone) values (101, 'Marlee', 'Stackbridge', 'mstackbridge0@rambler.ru', '433-341-6761');
 insert into therapist (therapistId, firstName, lastName, email, phone) values (102, 'Alwin', 'Lehmann', 'alehmann1@mozilla.com', '581-882-3097');
 insert into therapist (therapistId, firstName, lastName, email, phone) values (103, 'Findlay', 'Jewiss', 'fjewiss2@youtube.com', '607-573-1073');
 insert into therapist (therapistId, firstName, lastName, email, phone) values (104, 'Cass', 'Stroband', 'cstroband3@hugedomains.com', '260-730-7751');
@@ -162,4 +162,4 @@ insert into therapist (therapistId, firstName, lastName, email, phone) values (2
 insert into therapist (therapistId, firstName, lastName, email, phone) values (262, 'Corie', 'Oattes', 'coattes4h@wordpress.org', '258-963-4817');
 insert into therapist (therapistId, firstName, lastName, email, phone) values (263, 'Elly', 'Preist', 'epreist4i@aol.com', '668-477-5677');
 insert into therapist (therapistId, firstName, lastName, email, phone) values (264, 'Guillaume', 'Amberg', 'gamberg4j@linkedin.com', '457-874-7010');
-insert into therapist (therapistId, firstName, lastName, email, phone) values (265, 'Mason', 'Wyman', 'mwyman4k@nhs.uk', '755-184-0822');;
+insert into therapist (therapistId, firstName, lastName, email, phone) values (265, 'Mason', 'Wyman', 'mwyman4k@nhs.uk', '755-184-0822');; */

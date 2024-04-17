@@ -1,4 +1,4 @@
-insert into user (userId, firstName, lastName, email, therapistId) values (1, 'Janaye', 'Hafner', 'jhafner0@pen.io', 1);
+/* insert into user (userId, firstName, lastName, email, therapistId) values (1, 'Janaye', 'Hafner', 'jhafner0@pen.io', 1);
 insert into user (userId, firstName, lastName, email, therapistId) values (2, 'Doralin', 'Houldcroft', 'dhouldcroft1@senate.gov', 2);
 insert into user (userId, firstName, lastName, email, therapistId) values (3, 'Mead', 'Proven', 'mproven2@walmart.com', 3);
 insert into user (userId, firstName, lastName, email, therapistId) values (4, 'Bevvy', 'Braunthal', 'bbraunthal3@twitpic.com', 4);
@@ -198,3 +198,4 @@ insert into user (userId, firstName, lastName, email, therapistId) values (197, 
 insert into user (userId, firstName, lastName, email, therapistId) values (198, 'Jeanelle', 'Bullier', 'jbullier5h@smh.com.au', 198);
 insert into user (userId, firstName, lastName, email, therapistId) values (199, 'Bartlett', 'Finnimore', 'bfinnimore5i@nyu.edu', 199);
 insert into user (userId, firstName, lastName, email, therapistId) values (200, 'Kellen', 'Kingsman', 'kkingsman5j@g.co', 200);
+ */

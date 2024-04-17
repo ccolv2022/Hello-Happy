@@ -1,4 +1,4 @@
-insert into entry_activities (entryId, activityId) values (1, 1000001);
+/* insert into entry_activities (entryId, activityId) values (1, 1000001);
 insert into entry_activities (entryId, activityId) values (2, 1000002);
 insert into entry_activities (entryId, activityId) values (3, 1000003);
 insert into entry_activities (entryId, activityId) values (4, 1000004);
@@ -58,3 +58,4 @@ insert into entry_activities (entryId, activityId) values (57, 1000057);
 insert into entry_activities (entryId, activityId) values (58, 1000058);
 insert into entry_activities (entryId, activityId) values (59, 1000059);
 insert into entry_activities (entryId, activityId) values (60, 1000060);
+ */

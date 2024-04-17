@@ -1,4 +1,4 @@
-insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10001, null, 'justo nec condimentum neque sapien placerat ante nulla', false, 101, 1);
+/* insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10001, null, 'justo nec condimentum neque sapien placerat ante nulla', false, 101, 1);
 insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10002, '2024-03-19', 'quam pharetra magna ac consequat metus sapien', null, 102, 2);
 insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10003, '2023-11-09', 'et eros vestibulum ac est lacinia nisi', false, 103, 3);
 insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10004, null, 'augue a suscipit nulla', false, 104, 4);
@@ -198,3 +198,4 @@ insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId
 insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10198, null, 'fermentum donec', false, 298, 198);
 insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10199, '2024-03-28', '', true, 299, 199);
 insert into meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) values (10200, null, 'augue luctus tincidunt nulla mollis molestie', false, 300, 200);
+ */

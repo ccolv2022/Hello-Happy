@@ -1,4 +1,4 @@
-insert into subscription (userId, subscriptionId, subscriptionType, price, startDate) values (1, 100000001, 'enim', 0.04, '2023-12-11');
+/* insert into subscription (userId, subscriptionId, subscriptionType, price, startDate) values (1, 100000001, 'enim', 0.04, '2023-12-11');
 insert into subscription (userId, subscriptionId, subscriptionType, price, startDate) values (2, 100000002, 'in', 13.82, '2023-11-02');
 insert into subscription (userId, subscriptionId, subscriptionType, price, startDate) values (3, 100000003, 'vehicula', 9.21, '2023-10-27');
 insert into subscription (userId, subscriptionId, subscriptionType, price, startDate) values (4, 100000004, 'eget', 19.02, '2023-04-10');
@@ -58,3 +58,4 @@ insert into subscription (userId, subscriptionId, subscriptionType, price, start
 insert into subscription (userId, subscriptionId, subscriptionType, price, startDate) values (58, 100000058, 'elementum', 6.84, '2023-10-24');
 insert into subscription (userId, subscriptionId, subscriptionType, price, startDate) values (59, 100000059, 'mauris', 10.71, '2022-11-22');
 insert into subscription (userId, subscriptionId, subscriptionType, price, startDate) values (60, 100000060, 'eu', 19.08, '2022-11-29');
+ */

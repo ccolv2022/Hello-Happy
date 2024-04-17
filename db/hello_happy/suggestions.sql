@@ -1,4 +1,4 @@
-insert into suggestions (sugId, description, therapistId, userId) values (10001, 'eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare', 101, 1);
+/* insert into suggestions (sugId, description, therapistId, userId) values (10001, 'eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare', 101, 1);
 insert into suggestions (sugId, description, therapistId, userId) values (10002, null, null, 2);
 insert into suggestions (sugId, description, therapistId, userId) values (10003, 'bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce', 103, 3);
 insert into suggestions (sugId, description, therapistId, userId) values (10004, null, 104, 4);
@@ -198,3 +198,4 @@ insert into suggestions (sugId, description, therapistId, userId) values (10197,
 insert into suggestions (sugId, description, therapistId, userId) values (10198, 'id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque', 298, 198);
 insert into suggestions (sugId, description, therapistId, userId) values (10199, 'elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur', 299, 199);
 insert into suggestions (sugId, description, therapistId, userId) values (10200, 'elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel', 300, 200);
+ */
