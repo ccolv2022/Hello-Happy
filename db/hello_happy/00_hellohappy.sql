@@ -1,5 +1,6 @@
-CREATE SCHEMA IF NOT EXISTS hello_happy;
-USE hello_happy;
+DROP SCHEMA IF EXISTS `hello_happy` ;
+CREATE SCHEMA IF NOT EXISTS `hello_happy`;
+USE `hello_happy` ;
 
 
 CREATE TABLE IF NOT EXISTS therapist (
