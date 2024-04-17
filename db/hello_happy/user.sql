@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-insert into user (userId, firstName, lastName, email, therapistId) values (1, 'Janaye', 'Hafner', 'jhafner0@pen.io', 101);
+/* insert into user (userId, firstName, lastName, email, therapistId) values (1, 'Janaye', 'Hafner', 'jhafner0@pen.io', 101);
 insert into user (userId, firstName, lastName, email, therapistId) values (2, 'Doralin', 'Houldcroft', 'dhouldcroft1@senate.gov', 102);
 insert into user (userId, firstName, lastName, email, therapistId) values (3, 'Mead', 'Proven', 'mproven2@walmart.com', 103);
 insert into user (userId, firstName, lastName, email, therapistId) values (4, 'Bevvy', 'Braunthal', 'bbraunthal3@twitpic.com', 104);
