@@ -2,7 +2,7 @@
 -- dumping data 
 
 
-USE `hello_happy`;
+USE hello_happy;
 
 
 insert into therapist (therapistId, firstName, lastName, email, phone) values (101, 'Marlee', 'Stackbridge', 'mstackbridge0@rambler.ru', '433-341-6761');
