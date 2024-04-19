@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS user_settings (
 
 
 CREATE TABLE IF NOT EXISTS goals (
-   goalId int PRIMARY KEY,
+   goalId int AUTO_INCREMENT PRIMARY KEY,
    completionStatus boolean DEFAULT false,
    description varchar(100),
    userId int,
