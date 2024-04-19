@@ -9,7 +9,7 @@ suggestions = Blueprint('suggestions', __name__)
 @suggestions.route('/suggestions', methods=['GET'])
 def get_suggestions():
     cursor = db.get_db().cursor()
-    cursor.execute('select *')
+    cursor.execute('SELECT * FROM suggestions') 
 
     row_headers = [x[0] for x in cursor.description]
     json_data = []
@@ -40,16 +40,13 @@ def get_suggestion(sugId):
 @suggestions.route('/suggestions/<userId>', methods=['GET'])
 def get_user_suggestion(userId):
     cursor = db.get_db().cursor()
-    cursor.execute('SELECT * FROM entry WHERE sugId = {0}'.format(userId))
+    cursor.execute('SELECT * FROM suggestions WHERE sugId = %s', (userId,))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
     for row in theData:
         json_data.append(dict(zip(row_headers, row)))
-    the_response = make_response(jsonify(json_data))
-    the_response.status_code = 200
-    the_response.mimetype = 'application/json'
-    return the_response 
+    return jsonify(json_data)
 
 # Get suggestions details from a specific therapist ID.
 @suggestions.route('/suggestions/<therapistId>', methods=['GET'])
