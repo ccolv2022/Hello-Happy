@@ -38,21 +38,6 @@ def get_user_entry(userId):
     return the_response
 
 
-# Get entry detail for user with particular entryID
-@entry.route('/entry/<entryId>', methods=['GET'])
-def get_entry(entryId):
-    cursor = db.get_db().cursor()
-    cursor.execute('select * from entry where entryId = {0}'.format(entryId))
-    row_headers = [x[0] for x in cursor.description]
-    json_data = []
-    theData = cursor.fetchall()
-    for row in theData:
-        json_data.append(dict(zip(row_headers, row)))
-    the_response = make_response(jsonify(json_data))
-    the_response.status_code = 200
-    the_response.mimetype = 'application/json'
-    return the_response 
-
 # Update entry detail particular entryID
 @entry.route('/entry/<entryId>', methods=['PUT'])
 def update_entry(entryId):
