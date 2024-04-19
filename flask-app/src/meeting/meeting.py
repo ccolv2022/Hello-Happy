@@ -62,34 +62,31 @@ def create_meeting():
     return 'Meeting created!'
 
 
-
-# Update specific meeting
 @meeting.route('/meeting/<meetingId>', methods=['PUT'])
-def update_meeting():
-
+def update_meeting(meetingId):
     meeting_info = request.json
     current_app.logger.info(meeting_info)
 
-    #extracting variables
-    meetingId = meeting_info['meetingId']
+    # Extracting variables
     timestamp = meeting_info['timestamp']
     topic = meeting_info['topic']
     isVirtual = meeting_info['isVirtual']
     therapistId = meeting_info['therapistId']
     userId = meeting_info['userId']
 
-    #constructing query
-    query = 'UPDATE meeting SET timestamp = %s, topic = %s, isVirtual = %s, therapistId = %s, userId = %s where meetingId = %s'
+    # Constructing query
+    query = 'UPDATE meeting SET timestamp = %s, topic = %s, isVirtual = %s, therapistId = %s, userId = %s WHERE meetingId = %s'
     data = (timestamp, topic, isVirtual, therapistId, userId, meetingId)
     current_app.logger.info(query)
     current_app.logger.info(data)
 
-    #executing and committing the insert statement 
+    # Executing and committing the update statement
     cursor = db.get_db().cursor()
-    cursor.execute(query)
+    cursor.execute(query, data)
     db.get_db().commit()
 
-    return 'Meeting updated!'
+    return jsonify({'message': 'Meeting updated!'}), 200
+
 
 
 # Get meetings scheduled for specific user
