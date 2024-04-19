@@ -91,12 +91,13 @@ def add_goal(userId):
     current_app.logger.info(goal_info)
 
     #extracting variables
+    goalId = goal_info['goalId']
     completionStatus = goal_info['completionStatus']
     description = goal_info['description']
 
     #constructing query
-    query = 'INSERT INTO goals (userId, completionStatus, description) VALUES (%s, %s, %s)'
-    data = (userId, completionStatus, description)
+    query = 'INSERT INTO goals (goalId, userId, completionStatus, description) VALUES (%s, %s, %s, %s)'
+    data = (goalId, userId, completionStatus, description)
     current_app.logger.info(query)
     current_app.logger.info(data)
 
