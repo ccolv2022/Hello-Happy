@@ -22,10 +22,10 @@ def get_suggestions():
     return the_response
 
 # Get suggestions details from a specific  suggestion ID.
-@suggestions.route('/suggestions/suggestion/<sugId>', methods=['GET'])
+@suggestions.route('/suggestions/<sugId>', methods=['GET'])
 def get_suggestion(sugId):
     cursor = db.get_db().cursor()
-    cursor.execute('SELECT * FROM entry WHERE sugId = {0}'.format(sugId))
+    cursor.execute('SELECT * FROM entry WHERE sugId = %s', (sugId))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
