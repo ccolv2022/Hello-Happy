@@ -96,7 +96,7 @@ def add_goal(userId):
     description = goal_info['description']
 
     #constructing query
-    query = 'INSERT INTO goals (goalId, userId, completionStatus, description) VALUES (%s, %s, %s)'
+    query = 'INSERT INTO goals (goalId, userId, completionStatus, description) VALUES (%s, %s, %s, %s)'
     data = (goalId, userId, completionStatus, description)
     current_app.logger.info(query)
     current_app.logger.info(data)
