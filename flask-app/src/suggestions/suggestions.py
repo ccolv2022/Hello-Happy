@@ -25,7 +25,7 @@ def get_suggestions():
 @suggestions.route('/suggestions/<sugId>', methods=['GET'])
 def get_suggestion(sugId):
     cursor = db.get_db().cursor()
-    cursor.execute('SELECT * FROM entry WHERE sugId = %s', (sugId))
+    cursor.execute('SELECT * FROM suggestions WHERE sugId = %s', (sugId))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
