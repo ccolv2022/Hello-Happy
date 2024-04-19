@@ -41,6 +41,7 @@ def create_meeting():
     current_app.logger.info(meeting_info)
 
     # Extracting variables
+    meetingId = meeting_info['meetingId']
     timestamp = meeting_info['timestamp']
     topic = meeting_info['topic']
     isVirtual = meeting_info['isVirtual']
@@ -48,8 +49,8 @@ def create_meeting():
     userId = meeting_info['userId']
 
     # Constructing the query
-    query = 'INSERT INTO meeting (timestamp, topic, isVirtual, therapistId, userId) VALUES (%s, %s, %s, %s, %s)'
-    data = (timestamp, topic, isVirtual, therapistId, userId)
+    query = 'INSERT INTO meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) VALUES (%s, %s, %s, %s, %s)'
+    data = (meetingId, timestamp, topic, isVirtual, therapistId, userId)
     current_app.logger.info(query)
     current_app.logger.info(data)
 
