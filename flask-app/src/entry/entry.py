@@ -22,12 +22,12 @@ def get_entries():
 
     return jsonify(json_data)
 
-# Get entry detail for user with particular userID
+
 @entry.route('/entry/<userId>', methods=['GET'])
 def get_user_entry(userId):
     cursor = db.get_db().cursor()
-    cursor.execute('SELECT * FROM entry WHERE userId = {0}'.format(userId))
-    row_headers = [x[0] for x in cursor.description]
+    cursor.execute('SELECT * FROM entry WHERE userId = %s', (userId,))  # Use parameterized query
+    row_headers = [x[0] for x in cursor.description] if cursor.description else []
     json_data = []
     theData = cursor.fetchall()
     for row in theData:
@@ -35,7 +35,8 @@ def get_user_entry(userId):
     the_response = make_response(jsonify(json_data))
     the_response.status_code = 200
     the_response.mimetype = 'application/json'
-    return the_response 
+    return the_response
+
 
 # Get entry detail for user with particular entryID
 @entry.route('/entry/<entryId>', methods=['GET'])

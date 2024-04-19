@@ -125,7 +125,7 @@ def get_therapist_meetings(therapistId):
 def delete_meeting(meetingId):
 
     cursor = db.get_db().cursor()
-    cursor.execute('DELETE FROM meetings WHERE meetingId = %s', (meetingId,))
+    cursor.execute('DELETE FROM meeting WHERE meetingId = %s', (meetingId,))
     db.get_db().commit()
 
     return 'Meeting deleted!'
