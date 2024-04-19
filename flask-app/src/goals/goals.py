@@ -90,18 +90,17 @@ def add_goal(userId):
     goal_info = request.json
     current_app.logger.info(goal_info)
 
-    #extracting variables
-    goalId = goal_info['goalId']
+    # Extracting variables
     completionStatus = goal_info['completionStatus']
     description = goal_info['description']
 
-    #constructing query
-    query = 'INSERT INTO goals (goalId, userId, completionStatus, description) VALUES (%s, %s, %s, %s)'
-    data = (goalId, userId, completionStatus, description)
+    # Constructing query
+    query = 'INSERT INTO goals (userId, completionStatus, description) VALUES (%s, %s, %s)'
+    data = (userId, completionStatus, description)
     current_app.logger.info(query)
     current_app.logger.info(data)
 
-    #executing and committing the insert statement 
+    # Executing and committing the insert statement 
     cursor = db.get_db().cursor()
     cursor.execute(query, data)
     db.get_db().commit()
