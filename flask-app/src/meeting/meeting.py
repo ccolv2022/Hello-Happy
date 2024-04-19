@@ -37,29 +37,29 @@ def get_meeting(meetingId):
 # Create a new meeting
 @meeting.route('/meeting', methods=['POST'])
 def create_meeting():
-   
     meeting_info = request.json
     current_app.logger.info(meeting_info)
 
-    #extracting variables
+    # Extracting variables
     timestamp = meeting_info['timestamp']
     topic = meeting_info['topic']
     isVirtual = meeting_info['isVirtual']
     therapistId = meeting_info['therapistId']
     userId = meeting_info['userId']
 
-    #constructing query
+    # Constructing the query
     query = 'INSERT INTO meeting (timestamp, topic, isVirtual, therapistId, userId) VALUES (%s, %s, %s, %s, %s)'
     data = (timestamp, topic, isVirtual, therapistId, userId)
     current_app.logger.info(query)
     current_app.logger.info(data)
 
-    #executing and committing the insert statement 
+    # Executing and committing the insert statement
     cursor = db.get_db().cursor()
-    cursor.execute(query)
+    cursor.execute(query, data)  # Correctly passing the data tuple
     db.get_db().commit()
 
     return 'Meeting created!'
+
 
 
 # Update specific meeting
