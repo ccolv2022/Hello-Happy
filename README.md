@@ -1,7 +1,7 @@
 # HELLO-HAPPY MySQL + Flask Boilerplate Project
 
 **Contributors:** Calli Colvin, Vrinda Rana, Kerissa Duliga, Lily Robinson, Jae Na Wray
-
+**VIDEO LINK:** https://drive.google.com/drive/folders/1qmVlBV6lCRbS2za43gtcJSfRyDxLV_PY?usp=sharing 
 ## What's Hello Happy?
 
 Hello Happy is a journal app that allows users to keep track of their daily activities and habits while keeping their therapist in the loop. Therapists can have administrative control over certain users, granting them access to observe the day-to-day elements that shape a patient's day. Users also have the option to use the app solely as a personal journal, without linking it to a therapist. The app offers input fields for users to log their daily activities, helping them identify patterns in their days. The files in this project repository create our hello-happy database and populate it with fake data.
