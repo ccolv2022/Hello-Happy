@@ -22,7 +22,7 @@ def get_suggestions():
     return the_response
 
 # Get suggestions details from a specific  suggestion ID.
-@suggestions.route('/suggestions/suggestionId/<sugId>', methods=['GET'])
+@suggestions.route('/suggestions/suggestion/<sugId>', methods=['GET'])
 def get_suggestion(sugId):
     cursor = db.get_db().cursor()
     cursor.execute('SELECT * FROM entry WHERE sugId = {0}'.format(sugId))
