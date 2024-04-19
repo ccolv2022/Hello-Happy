@@ -67,7 +67,7 @@ def get_therapist_suggestion(therapistId):
     return the_response 
 
  #Create a new suggestiom
-@suggestions.route('/suggestion', methods=['POST'])
+@suggestions.route('/suggestions', methods=['POST'])
 def add_new_suggestion():
     
     the_data = request.json
