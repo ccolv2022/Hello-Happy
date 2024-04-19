@@ -49,7 +49,7 @@ def create_meeting():
     userId = meeting_info['userId']
 
     # Constructing the query
-    query = 'INSERT INTO meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) VALUES (%s, %s, %s, %s, %s)'
+    query = 'INSERT INTO meeting (meetingId, timestamp, topic, isVirtual, therapistId, userId) VALUES (%s, %s, %s, %s, %s, %s)'
     data = (meetingId, timestamp, topic, isVirtual, therapistId, userId)
     current_app.logger.info(query)
     current_app.logger.info(data)
