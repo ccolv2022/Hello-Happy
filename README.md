@@ -1,6 +1,7 @@
 # HELLO-HAPPY MySQL + Flask Boilerplate Project
 
 **Contributors:** Calli Colvin, Vrinda Rana, Kerissa Duliga, Lily Robinson, Jae Na Wray
+
 **VIDEO LINK:** https://drive.google.com/drive/folders/1qmVlBV6lCRbS2za43gtcJSfRyDxLV_PY?usp=sharing 
 ## What's Hello Happy?
 
