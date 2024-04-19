@@ -25,7 +25,7 @@ def get_meetings():
 def get_meeting(meetingId):
    
     cursor = db.get_db().cursor()
-    cursor.execute('SELECT * FROM meetings WHERE meetingId = %s', (meetingId,))
+    cursor.execute('SELECT * FROM meeting WHERE meetingId = %s', (meetingId,))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
